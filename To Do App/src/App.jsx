@@ -6,7 +6,6 @@ import "./index.css"
 
 function App() {
 
-  let categories = ['Casual', 'Formal', 'Decent'];
   return (
 
     <center class="todo-container">
@@ -17,10 +16,6 @@ function App() {
         <TodoItem2 />
       </div>
 
-      
-      <select>
-        {categories.map(category => <option>{category}</option>)}
-      </select>
       
     </center>
   )

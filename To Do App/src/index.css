@@ -4,6 +4,8 @@ input{
 
 .todo-container{
   text-align: left;
+  width: 45%;
+  margin: 0 auto;
 }
 
 .kg-row{
