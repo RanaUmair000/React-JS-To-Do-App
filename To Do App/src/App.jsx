@@ -1,10 +1,18 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
-import TodoItem1 from "./Components/TodoItem1";
-import TodoItem2 from "./Components/TodoItem2";
+import TodoItem from "./Components/TodoItem";
 import "./index.css"
 
 function App() {
+
+  let todolist = [{
+    TaskName : "Buy Milk",
+    Date : "4/10/2023"
+  },
+  {
+    TaskName : "Go To School",
+    Date : "4/10/2023"
+  }];
 
   return (
 
@@ -12,8 +20,7 @@ function App() {
       <AppName />
       <AddTodo />
       <div class="list-container">
-        <TodoItem1 />
-        <TodoItem2 />
+        <TodoItem todolist = {todolist} />
       </div>
     </center>
   )
