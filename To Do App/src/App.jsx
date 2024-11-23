@@ -28,11 +28,11 @@ function App() {
 
   return (
 
-    <center class="todo-container">
+    <center className="todo-container">
       <AppName />
       <AddTodo addTask={addTask} />
       {tasks.length === 0 && <Error />}
-      <div class="list-container">
+      <div className="list-container">
         <TodoItem todolist = {tasks} deleteItem={deleteItem} />
       </div>
     </center>

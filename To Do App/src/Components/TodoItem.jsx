@@ -3,18 +3,18 @@ let TodoItem = ({todolist, deleteItem}) => {
     let todoName = 'Buy Milk';
     let todoDate = '4/10/2023';
 
-    return <div class="container">
+    return <div className="container">
 
-        {todolist.map(task => 
-            <div class="row kg-row">
-                <div class="col-6">
+        {todolist.map((task, index) => 
+            <div key={index} className="row kg-row">
+                <div className="col-6">
                     {task.TaskName}
                 </div>
-                <div class="col-4">
+                <div className="col-4">
                     {task.Date}
                 </div>
-                <div class="col-2">
-                    <button class="btn btn-danger kg-button" onClick={() => deleteItem(task.TaskName)}>Delete</button>
+                <div className="col-2">
+                    <button className="btn btn-danger kg-button" onClick={() => deleteItem(task.TaskName)}>Delete</button>
                 </div>
             </div>
         )}

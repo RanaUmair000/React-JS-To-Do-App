@@ -14,14 +14,14 @@ function AddTodo({addTask}) {
     }
 
     return <div className="container text-center">
-        <div class="row kg-row">
-            <div class="col-6">
+        <div className="row kg-row">
+            <div className="col-6">
                 <input type="text" placeholder="Enter Task Here" onChange={(event) => handleNameChange(event)} />
             </div>
-            <div class="col-4">
+            <div className="col-4">
                 <input type="date" onChange={(event) => handleDateChange(event)} placeholder="Enter Task Here" />
             </div>
-            <div class="col-2">
+            <div className="col-2">
                 <button className="btn btn-success kg-button" onClick={() => addTask(inputText, inputDate)}>Add</button>
             </div>
         </div>
