@@ -16,7 +16,6 @@ function App() {
       let newItems = [...foods, inputItem];
       setItems(newItems);
     }
-    
   }
 
   return (

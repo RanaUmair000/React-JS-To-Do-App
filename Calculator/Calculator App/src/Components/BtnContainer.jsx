@@ -1,8 +1,8 @@
-let BtnContainer = ({values}) => {
+let BtnContainer = ({values, calInput}) => {
     return <>
         <div class="btns-container">
             {values.map((item, index) =>
-                <button key={index}>{item}</button>
+                <button onClick={() => calInput(item)} key={index}>{item}</button>
             )}
         </div>
     </>
