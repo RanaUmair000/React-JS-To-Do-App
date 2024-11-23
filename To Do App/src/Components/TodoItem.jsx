@@ -1,4 +1,4 @@
-let TodoItem = ({todolist}) => {
+let TodoItem = ({todolist, deleteItem}) => {
 
     let todoName = 'Buy Milk';
     let todoDate = '4/10/2023';
@@ -14,7 +14,7 @@ let TodoItem = ({todolist}) => {
                     {task.Date}
                 </div>
                 <div class="col-2">
-                    <button class="btn btn-danger kg-button">Delete</button>
+                    <button class="btn btn-danger kg-button" onClick={() => deleteItem(task.TaskName)}>Delete</button>
                 </div>
             </div>
         )}
