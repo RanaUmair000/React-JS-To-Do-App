@@ -1,6 +1,7 @@
 import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import TodoItem from "./Components/TodoItem";
+import Error from "./Components/Error";
 import "./index.css"
 import {useState} from 'react';
 
@@ -30,6 +31,7 @@ function App() {
     <center class="todo-container">
       <AppName />
       <AddTodo addTask={addTask} />
+      {tasks.length === 0 && <Error />}
       <div class="list-container">
         <TodoItem todolist = {tasks} deleteItem={deleteItem} />
       </div>
