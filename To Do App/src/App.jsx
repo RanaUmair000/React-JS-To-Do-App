@@ -16,9 +16,13 @@ function App() {
     Date : "4/10/2023"
   }]);
 
-  const addTask = (inputTask, inputDate) => {
-    console.log(inputDate);
-    settasks([...tasks, {TaskName: inputTask, Date: inputDate}]);
+  const addTask = (event, textInput, dateInput) => {
+    event.preventDefault();
+    let toDoName = textInput.current.value;
+    let dueDate = dateInput.current.value;
+    textInput.current.value = "";
+    dateInput.current.value = "";
+    settasks([...tasks, { TaskName: toDoName, Date: dueDate }]);
   }
 
   const deleteItem = (itemToDelete) => {
