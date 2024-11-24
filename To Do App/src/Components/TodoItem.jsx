@@ -1,4 +1,9 @@
-let TodoItem = ({todolist, deleteItem}) => {
+import { useContext } from "react";
+import { ToDoItemsContext } from "../store/ToDoItemsContext";
+
+let TodoItem = ({deleteItem}) => {
+
+    const todolist = useContext(ToDoItemsContext);
 
     return <div className="container">
 

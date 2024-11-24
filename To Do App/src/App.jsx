@@ -2,8 +2,9 @@ import AppName from "./Components/AppName";
 import AddTodo from "./Components/AddTodo";
 import TodoItem from "./Components/TodoItem";
 import Error from "./Components/Error";
-import "./index.css"
+import { ToDoItemsContext } from "./store/ToDoItemsContext";
 import {useState} from 'react';
+import "./index.css"
 
 function App() {
 
@@ -31,15 +32,16 @@ function App() {
   }
 
   return (
-
-    <center className="todo-container">
-      <AppName />
-      <AddTodo addTask={addTask} />
-      {tasks.length === 0 && <Error />}
-      <div className="list-container">
-        <TodoItem todolist = {tasks} deleteItem={deleteItem} />
-      </div>
-    </center>
+    <ToDoItemsContext.Provider value={tasks}>
+      <center className="todo-container">
+        <AppName />
+        <AddTodo addTask={addTask} />
+        {tasks.length === 0 && <Error />}
+        <div className="list-container">
+          <TodoItem deleteItem={deleteItem} />
+        </div>
+      </center>
+    </ToDoItemsContext.Provider>
   )
 }
 
