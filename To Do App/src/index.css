@@ -19,3 +19,7 @@ input{
 .list-container{
   text-align: left !important;
 }
+
+.list-container{
+  color: red;
+}
