@@ -28,6 +28,7 @@ input[type="date"] {
   font-size: 16px;
 }
 
+<<<<<<< HEAD
 .kg-button {
   width: 100%;
   padding: 10px;
@@ -76,3 +77,23 @@ h1.error-message {
   margin-bottom: 10px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
 }
+=======
+.todo-container{
+  text-align: left;
+  width: 45%;
+  margin: 0 auto;
+}  
+
+.kg-row{
+  margin: 10px 5px;
+}  
+  
+.kg-button{  
+  min-width: 80px;
+}
+
+.list-container{
+  text-align: left !important;
+}
+
+>>>>>>> 13706115a2f45668c36e05a390294f0e3d1e9d22
