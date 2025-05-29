@@ -1,21 +1,78 @@
-input{
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #74ebd5, #ACB6E5);
+  color: #333;
+  min-height: 100vh;
+}
+
+.todo-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #ffffffdd;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.kg-row {
+  margin: 10px 0;
+}
+
+input[type="text"],
+input[type="date"] {
   width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
 }
 
-.todo-container{
-  text-align: left;
-  width: 45%;
-  margin: 0 auto;
+.kg-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
 }
 
-.kg-row{
-  margin: 10px 5px;
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: white;
 }
 
-.kg-button{
-  min-width: 80px;
+.btn-success:hover {
+  background-color: #218838;
 }
 
-.list-container{
-  text-align: left !important;
+.btn-danger {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+h1.app-heading {
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+h1.error-message {
+  font-size: 28px;
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+.task-row {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.05);
 }

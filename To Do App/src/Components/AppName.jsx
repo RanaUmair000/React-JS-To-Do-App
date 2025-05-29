@@ -1,5 +1,5 @@
-function AppName(){
-    return <center style={{"fontSize": "36px", "textAlign": "center"}}>TODO React App</center>
-}
-
-export default AppName;
+function AppName() {
+    return <h1 className="app-heading text-center">📝 TODO React App</h1>
+  }
+  
+  export default AppName;
